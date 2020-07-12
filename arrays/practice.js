@@ -199,8 +199,10 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Code Here
 function removeItem(myGroceryList, remove){
   for(i=0; i < myGroceryList.length ; i++){
-    if (myGroceryList[i] === remove){
+    if (myGroceryList[i] == remove && myGroceryList[i] == true){
       myGroceryList.slice[i,1]
+    } else {
+      return []
     }
   }
   return myGroceryList
@@ -298,13 +300,13 @@ function longer(arr1, arr2){
 
 //Code Here
 function both(arr1, arr2){
-  let newArr = []
+  let newArray = []
   for(i=0;i<arr1.length;i++){
-    if(arr1[i] === arr2.indexOf(i)){
-      newArr.push(i)
+    if(arr1[i] === arr2[i] + 1){
+      newArray.push(arr1[i])
     }
   }
-  return newArr
+  return newArray
 }
 
 
@@ -346,7 +348,7 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees.push(joe, cahlan, ryan, colt)
 
 
 /*
@@ -355,7 +357,11 @@ var colt = {
 */
 
 //Code Here
-
+for(let i=0; i < devMountainEmployees.length; i++){
+  if( devMountainEmployees[i] == cahlan){
+    devMountainEmployees.splice(i,1)
+  }
+}
 
 
 ////////// PROBLEM 13 //////////
@@ -367,7 +373,7 @@ var colt = {
 */
 
 //Code Here
-
+users = []
 
 
 /*
@@ -388,6 +394,21 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
+var user2 = {
+  name: 'Jim Beam',
+  email: 'JB@gmail.com',
+  password: 'youreTheDrunkOne',
+  username: 'boozyBeam'
+};
+
+var user3 = {
+  name: 'Rick Sanchez',
+  email: 'DirtySanchez@gmail.com',
+  password: 'interDimensionalRick',
+  username: 'RicklePick'
+}
+
+users.push(user1, user2, user3)
 
 
 
@@ -402,7 +423,11 @@ var user1 = {
 */
 
 //Code Here
-
+for(let i=0; i < users.length; i++){
+  if(users[i].email === 'mark.mciver@devmounta.in'){
+    users.splice(i,1)
+  }
+}
 
 
 /*
